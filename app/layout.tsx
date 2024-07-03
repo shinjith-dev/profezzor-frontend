@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="h-screen w-screen max-h-screen max-w-screen">{children}</body>
+    <html lang="en" data-mode="dark">
+      <body className="h-screen w-screen max-h-screen max-w-screen bg-bg text-fg">{children}</body>
     </html>
   );
 }

@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --col-bg: 32 57 95;
+  --col-surface: 35 100 98;
+  --col-overlay: 33 43 91;
+  --col-muted: 257 9 61;
+  --col-subtle: 248 12 52;
+  --col-fg: 248 19 40;
+  --col-love: 343 35 55;
+  --col-gold: 35 81 56;
+  --col-rose: 3 53 67;
+  --col-pine: 197 53 34;
+  --col-foam: 189 30 48;
+  --col-iris: 268 21 57;
+  --col-highlight-low: 25 35 93;
+  --col-highlight-med: 10 9 86;
+  --col-highlight-high: 315 4 80;
+}
+
+:root[data-mode="dark"] {
+  --col-bg: 249 22 12;
+  --col-surface: 247 23 15;
+  --col-overlay: 248 25 18;
+  --col-muted: 249 12 47;
+  --col-subtle: 248 15 61;
+  --col-fg: 245 50 91;
+  --col-love: 343 76 68;
+  --col-gold: 35 88 72;
+  --col-rose: 2 55 83;
+  --col-pine: 197 49 38;
+  --col-foam: 189 43 73;
+  --col-iris: 267 57 78;
+  --col-highlight-low: 244 18 15;
+  --col-highlight-med: 249 15 28;
+  --col-highlight-high: 248 13 36;
+
+}
