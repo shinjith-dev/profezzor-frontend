@@ -38,3 +38,23 @@
   --col-highlight-high: 248 13 36;
 
 }
+
+.initial-exit {
+  animation: initial-exit 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 forwards;
+}
+
+@keyframes initial-exit {
+  0% {
+    transform: translate(0, 0);
+    font-size: 128px;
+  }
+
+  100% {
+    transform: translate(max(-384px, calc(-50vw + 20px + 50%)), calc(-50vh + 20px + 50%));
+    font-size: 30px;
+  }
+}
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both;
+}
