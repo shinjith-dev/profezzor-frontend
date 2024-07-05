@@ -17,7 +17,7 @@ export default function Collection() {
       <GlobalAlert />
       <PageHeader title="Universities" description="Choose the university that you belong to" />
       <Table>
-        <TableCaption>Can't find your university? Let's add it, <Link href="/" className="text-primary">Click here</Link>.</TableCaption>
+        <TableCaption>Can&rsquo;t find your university? Let&rsquo;s add it, <Link href="/" className="text-primary">Click here</Link>.</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead>Name</TableHead>
