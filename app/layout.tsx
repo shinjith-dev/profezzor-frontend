@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`max-w-screen h-screen max-h-screen w-screen bg-bg text-fg ${manrope.className}`}
+        className={`max-w-screen h-screen max-h-screen w-screen bg-background text-foreground ${manrope.className}`}
       >
         <Initial />
         <Navbar />

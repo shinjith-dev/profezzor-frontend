@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="mx-auto flex w-full max-w-3xl justify-between p-5">
-        <Link href="/" className={`${kaushanScript.className} text-3xl`}>
+        <Link href="/" className={`${kaushanScript.className} text-xl sm:text-2xl md:text-3xl`}>
           Profezzor
         </Link>
 
