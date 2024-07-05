@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { manrope } from "@/utils/fonts";
-import Navbar from "@/components/common/Navbar";
+import Navbar from "@/components/common/navbar";
 import Initial from "@/components/home/Initial";
 
 export const metadata: Metadata = {
@@ -15,10 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-mode="light">
-      <body className={`h-screen w-screen max-h-screen max-w-screen bg-bg text-fg ${manrope.className}`}>
+    <html lang="en">
+      <body
+        className={`max-w-screen h-screen max-h-screen w-screen bg-bg text-fg ${manrope.className}`}
+      >
         <Initial />
-        {/* <Navbar />{children} */}
+        <Navbar />
+        {children}
       </body>
     </html>
   );
