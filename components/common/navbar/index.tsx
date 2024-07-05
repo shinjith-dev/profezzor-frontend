@@ -1,6 +1,8 @@
 import { kaushanScript } from "@/utils/fonts";
 import ModeSwitch from "./ModeSwitch";
 import Link from "next/link";
+import { IconBookUpload, IconSearch } from "@tabler/icons-react";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
@@ -10,7 +12,17 @@ const Navbar = () => {
           Profezzor
         </Link>
 
-        <ul>
+        <ul className="flex gap-2 items-center">
+          <li>
+            <Button size="sm" className="gap-1 rounded-full" variant="outline">
+              <IconBookUpload size={16} /> Contribute
+            </Button>
+          </li>
+          <li>
+            <Button size="icon" variant='ghost' className="rounded-full">
+              <IconSearch size={20} />
+            </Button>
+          </li>
           <li>
             <ModeSwitch />
           </li>

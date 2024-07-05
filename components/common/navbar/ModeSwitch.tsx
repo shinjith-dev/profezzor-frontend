@@ -3,6 +3,7 @@ import React from "react";
 // import { Sun, MoonStar } from "lucide-react";
 import useDarkMode from "@/components/hooks/useDarkMode";
 import { IconSun, IconMoon } from "@tabler/icons-react";
+import { Button } from "@/components/ui/button";
 
 const ModeSwitch = () => {
   const { change, mode } = useDarkMode();
@@ -18,7 +19,7 @@ const ModeSwitch = () => {
   };
 
   return (
-    <button
+    <Button size="icon" variant='ghost'
       title={`Switch to ${getNextMode()} mode`}
       onClick={() => change(mode === "light")}
       style={{
@@ -27,7 +28,7 @@ const ModeSwitch = () => {
       className="hover:shadow-spread-xs group rounded-full p-1 transition-all sm:p-2"
     >
       {getIcon()}
-    </button>
+    </Button>
   );
 };
 

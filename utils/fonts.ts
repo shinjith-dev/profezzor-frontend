@@ -9,4 +9,5 @@ export const kaushanScript = Kaushan_Script({
 export const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-sans"
 });
