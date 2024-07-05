@@ -3,7 +3,7 @@ import { IconHeartHandshake } from "@tabler/icons-react"
 
 export default function GlobalAlert() {
   return (
-    <Alert variant="destructive">
+    <Alert>
       <IconHeartHandshake className="h-4 w-4" />
       <AlertTitle>Hello visitor!</AlertTitle>
       <AlertDescription>
