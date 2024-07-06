@@ -17,12 +17,12 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-2">
           <li>
-            <Button size="sm" className="gap-1 rounded-full" variant="outline">
-              <IconBookUpload size={16} /> Contribute
-            </Button>
+            <GlobalSearch />
           </li>
           <li>
-            <GlobalSearch />
+            <Button size="sm" className="gap-1 rounded-full">
+              <IconBookUpload size={16} /> Contribute
+            </Button>
           </li>
         </ul>
       </div>

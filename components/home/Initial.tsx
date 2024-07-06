@@ -24,7 +24,7 @@ export default function Initial() {
     <div className="initial-parent absolute left-0 top-0 z-[1000] flex h-full w-full items-center justify-center bg-background transition-all duration-300">
       <h1
         ref={ref}
-        className={`${kaushanScript.className} initial-entry animate-pulse text-5xl duration-500 sm:text-7xl md:text-9xl`}
+        className={`${kaushanScript.className} initial-entry animate-pulse text-5xl duration-800 sm:text-7xl md:text-9xl`}
       >
         Profezzor
       </h1>

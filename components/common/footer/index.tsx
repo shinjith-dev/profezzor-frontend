@@ -6,12 +6,12 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function Footer() {
   return (
     <footer className="absolute bottom-0 left-0 w-screen">
-      <div className="relative mx-auto flex max-w-4xl justify-between gap-4 px-5 py-3">
+      <div className="relative mx-auto flex max-w-4xl justify-between items-center gap-4 px-5 py-3">
         <h6 className="text-sm text-text-subtle">
           Created and maintained by{" "}
           <Link
             href="https://github.com/shinjith-dev/profezzor-frontend"
-            className="text-primary"
+            className="text-foreground"
           >
             Team Professor
           </Link>
