@@ -8,16 +8,26 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 import Link from "next/link";
 
 export default function Collection() {
   return (
-    <main className="mx-auto h-full max-h-[calc(100vh-76px)] w-full max-w-4xl overflow-y-auto p-5 flex flex-col gap-4">
+    <main className="mx-auto flex h-full max-h-[calc(100vh-76px)] w-full max-w-4xl flex-col gap-4 overflow-y-auto p-5">
       <GlobalAlert />
-      <PageHeader title="Universities" description="Choose the university that you belong to" />
+      <PageHeader
+        title="Universities"
+        description="Choose the university that you belong to"
+        searchLabel="Search universities"
+      />
       <Table>
-        <TableCaption>Can&rsquo;t find your university? Let&rsquo;s add it, <Link href="/" className="text-primary">Click here</Link>.</TableCaption>
+        <TableCaption>
+          Can&rsquo;t find your university? Let&rsquo;s add it,{" "}
+          <Link href="/" className="text-primary">
+            Click here
+          </Link>
+          .
+        </TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="px-0">Name</TableHead>
@@ -26,21 +36,25 @@ export default function Collection() {
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell className="font-medium px-0">APJ Abdul Kalam Technological Univeristy (KTU)</TableCell>
-            <TableCell className="text-text-subtle px-0">KTU</TableCell>
+            <TableCell className="px-0 font-medium">
+              APJ Abdul Kalam Technological Univeristy (KTU)
+            </TableCell>
+            <TableCell className="px-0 text-text-subtle">KTU</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium px-0">Kannur University</TableCell>
-            <TableCell className="text-text-subtle px-0">KUK</TableCell>
+            <TableCell className="px-0 font-medium">
+              Kannur University
+            </TableCell>
+            <TableCell className="px-0 text-text-subtle">KUK</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium px-0">Calicut University</TableCell>
-            <TableCell className="text-text-subtle px-0">CUK</TableCell>
+            <TableCell className="px-0 font-medium">
+              Calicut University
+            </TableCell>
+            <TableCell className="px-0 text-text-subtle">CUK</TableCell>
           </TableRow>
-
-
         </TableBody>
       </Table>
     </main>
   );
-} 
+}

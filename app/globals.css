@@ -82,17 +82,16 @@
   }
 }
 
-
 .initial-exit {
   animation: initial-exit 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 forwards;
 }
 
 .initial-parent:has(> h1.initial-exit) {
-  animation: initial-fade-out 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 forwards;
+  animation: initial-fade-out 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1
+    forwards;
 }
 
 @keyframes initial-fade-out {
-
   0%,
   80% {
     background-color: hsl(var(--background));

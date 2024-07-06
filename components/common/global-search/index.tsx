@@ -1,5 +1,5 @@
-"use client"
-import * as React from "react"
+"use client";
+import * as React from "react";
 import {
   CommandDialog,
   CommandEmpty,
@@ -9,28 +9,33 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/components/ui/command"
-import { Button } from "@/components/ui/button"
-import { IconSearch } from "@tabler/icons-react"
+} from "@/components/ui/command";
+import { Button } from "@/components/ui/button";
+import { IconSearch } from "@tabler/icons-react";
 
 export default function GlobalSearch() {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "/") {
-        e.preventDefault()
-        setOpen((open) => !open)
+        e.preventDefault();
+        setOpen((open) => !open);
       }
-    }
+    };
 
-    document.addEventListener("keydown", down)
-    return () => document.removeEventListener("keydown", down)
-  }, [])
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
+  }, []);
 
   return (
     <>
-      <Button onClick={() => setOpen(prev => !prev)} size="icon" variant='ghost' className="rounded-full">
+      <Button
+        onClick={() => setOpen((prev) => !prev)}
+        size="icon"
+        variant="ghost"
+        className="rounded-full"
+      >
         <IconSearch size={20} />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
@@ -55,5 +60,5 @@ export default function GlobalSearch() {
         </CommandList>
       </CommandDialog>
     </>
-  )
+  );
 }

@@ -18,7 +18,9 @@ const ModeSwitch = () => {
   };
 
   return (
-    <Button size="icon" variant='ghost'
+    <Button
+      size="icon"
+      variant="ghost"
       title={`Switch to ${getNextMode()} mode`}
       onClick={() => change(mode === "light")}
       style={{
