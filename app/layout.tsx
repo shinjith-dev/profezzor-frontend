@@ -3,6 +3,7 @@ import "./globals.css";
 import { manrope } from "@/utils/fonts";
 import Navbar from "@/components/common/navbar";
 import Initial from "@/components/home/Initial";
+import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
   title: "Profezzor",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Initial />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

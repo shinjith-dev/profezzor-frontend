@@ -1,13 +1,13 @@
 import { kaushanScript } from "@/utils/fonts";
-import ModeSwitch from "./ModeSwitch";
 import Link from "next/link";
-import { IconBookUpload, IconSearch } from "@tabler/icons-react";
+import { IconBookUpload } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
+import GlobalSearch from "../global-search";
 
 const Navbar = () => {
   return (
     <nav>
-      <div className="mx-auto flex w-full max-w-3xl justify-between p-5">
+      <div className="mx-auto flex w-full max-w-4xl justify-between p-5">
         <Link href="/" className={`${kaushanScript.className} text-xl sm:text-2xl md:text-3xl`}>
           Profezzor
         </Link>
@@ -19,12 +19,7 @@ const Navbar = () => {
             </Button>
           </li>
           <li>
-            <Button size="icon" variant='ghost' className="rounded-full">
-              <IconSearch size={20} />
-            </Button>
-          </li>
-          <li>
-            <ModeSwitch />
+            <GlobalSearch />
           </li>
         </ul>
       </div>

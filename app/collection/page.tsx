@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Collection() {
   return (
-    <main className="mx-auto h-full max-h-[calc(100vh-76px)] w-full max-w-3xl overflow-y-auto p-5 flex flex-col gap-4">
+    <main className="mx-auto h-full max-h-[calc(100vh-76px)] w-full max-w-4xl overflow-y-auto p-5 flex flex-col gap-4">
       <GlobalAlert />
       <PageHeader title="Universities" description="Choose the university that you belong to" />
       <Table>

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-// import { Sun, MoonStar } from "lucide-react";
 import useDarkMode from "@/components/hooks/useDarkMode";
 import { IconSun, IconMoon } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
@@ -9,8 +8,8 @@ const ModeSwitch = () => {
   const { change, mode } = useDarkMode();
 
   const getIcon = () => {
-    if (mode === "light") return <IconMoon size={20} className="text-subtle" />;
-    return <IconSun size={20} className="text-subtle" />;
+    if (mode === "light") return <IconMoon size={18} className="text-subtle" />;
+    return <IconSun size={18} className="text-subtle" />;
   };
 
   const getNextMode = () => {
